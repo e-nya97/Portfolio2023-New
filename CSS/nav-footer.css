@@ -1,0 +1,230 @@
+/******************** Desktop [1024->) *********************** */
+
+  
+   
+    /* NAVIGATION */
+    .nav-section{
+        display: flex;
+        flex-direction: row;
+        gap: 24px;
+    }
+
+    .logo{
+        display: flex;
+    }
+    .nav-logo{
+        grid-column: 6/8;
+        justify-content: center;
+    }
+
+    .nav-left{
+        grid-column: 2/6;
+        justify-content: flex-start;
+    }
+
+    .nav-right{
+        grid-column: 8/12;
+        justify-content: flex-end;
+    }
+
+    .nav-item{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+
+        width: 112px;
+        color: var(--colors-dark-100);
+    }
+
+    a.nav-item {
+        text-decoration: none;
+    }
+    .nav-item--active{
+        border-bottom: 2px solid;
+    }
+    .nav-item--icon{
+        display: none !important;
+    }
+    .nav-item--icon--active{
+        display: block !important;
+    }
+
+
+    .border-bottom--blue{
+        border-color: var(--colors-blue-100) !important;
+        outline-color: var(--colors-blue-100)!important;
+    }
+    .border-bottom--cyan{
+        border-color: var(--colors-cyan-100) !important;
+        outline-color: var(--colors-cyan-100)!important;
+    }
+    .border-bottom--yellow{
+        border-color: var(--colors-yellow-100)!important;
+        outline-color: var(--colors-yellow-100)!important;
+    }
+    .border-bottom--dark{
+        border-color: var(--colors-dark-100)!important;
+        outline-color: var(--colors-dark-100)!important;
+    }
+
+    .nav-item:focus{
+        outline: 2px solid;
+    }
+    .nav-item:hover{
+        border-bottom: 2px solid;
+    }
+
+    /* .nav-item:hover .nav-item--icon{
+        display: block !important;
+    } */
+
+    
+    /* FOOTER */
+    footer{
+        padding: 40px 0;
+        border-top: 1px solid rgba(40, 61, 96, 0.50);
+    }
+
+    .footer-section{
+        display: flex;
+        align-content: center;
+    }
+
+    .footer-logo--one{
+        grid-row: 1;
+        grid-column:2/7;
+    }
+    .footer-quote--two{
+        grid-row: 1;
+        grid-column:7/12;
+    }
+    .footer-quote--three{
+        grid-row: 2;
+        grid-column:2/7;
+    }
+    .footer-social--four{
+        grid-row: 2;
+        grid-column:7/12;
+    }
+
+    .footer-section--left{
+        justify-content: flex-start;
+        text-align: left;
+    }
+    .footer-section--right{
+        justify-content: flex-end;
+        text-align: right;
+    }
+
+    .footer-social{
+        display: flex;
+        align-items: center;
+        gap: 24px;
+    }
+
+    a.social-icon{
+        text-decoration: none;
+        color: var(--colors-dark-100);
+        opacity: 75%;
+    }
+    a.social-icon:hover{
+        color: var(--colors-blue-100);
+        opacity: 100%;
+    }
+
+
+
+/******************** TABLET [768>1023) *********************** */
+@media screen and (max-width: 1024px){
+    
+    
+    /* NAVIGATION */
+    .nav-item{
+        width: 120px;
+    }
+
+    .nav-logo{
+        grid-column: 4/6;
+    }
+    .nav-left{
+        grid-column: 1/4;
+        /* justify-content: flex-end; */
+    }
+    .nav-right{
+        grid-column: 6/9;
+        /* justify-content: flex-start; */
+    }
+
+    /* FOOTER */
+    .footer-logo--one{
+        grid-column:1/5;
+    }
+    .footer-quote--two{
+        grid-column:5/9;
+    }
+    .footer-quote--three{
+        grid-column:1/5;
+    }
+    .footer-social--four{
+        grid-column:5/9;
+    }
+}
+
+
+/******************** PHONE [<-820 portrait) *********************** */
+@media screen and (max-width: 820px){
+   
+    
+    /* NAVIGATION */
+    .nav-section{
+        flex-direction: column;
+        gap: 16px;
+        height: 88px;
+    }
+
+    .nav-item{
+        height: 36px;
+    }
+
+    .nav-logo{
+        display: none;
+        grid-column: auto;
+    }
+    .nav-left{
+        grid-column: 1/3;
+        justify-self: center;
+    }
+    .nav-right{
+        grid-column: 3/5;
+        justify-self: center;
+    }
+
+    /* FOOTER */
+    .footer-logo--one{
+        grid-row: 1;
+        grid-column:1/5;
+    }
+    .footer-quote--two{
+        grid-row: 3;
+        grid-column:1/5;
+    }
+    .footer-quote--three{
+        grid-row: 2;
+        grid-column:1/5;
+    }
+    .footer-social--four{
+        grid-row: 4;
+        grid-column:1/5;
+    }
+    
+    .footer-section--left{
+        justify-content: center;
+        text-align: center;
+    }
+    .footer-section--right{
+        justify-content: center;
+        text-align: center;
+    }
+}

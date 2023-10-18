@@ -1,0 +1,153 @@
+/******************** DESKTOP [1024->) *********************** */
+.cs--image{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.img-default{
+    background-color: #FCD756;
+}
+.background-img-white{
+    background-color: white;
+    padding: 24px;
+}
+
+
+/* COVER */
+.img-cover--one{
+    background-image: url(../img/valor/summary-desktop.png);
+    background-color: #FEBD6D;
+    background-size: cover;
+}
+
+/* THE GOAL */
+    .img-goal--one{
+        background-image: url(../img/valor/goal-1.jpg);
+        background-size: cover;
+    }
+
+/* EMPATHIZE */
+
+    .img-empathize--one{
+        background-image: url(../img/valor/empathize-01.svg);
+        background-size: contain;
+    }
+    .img-empathize--two{
+        background-image: url(../img/valor/empathize-02.svg);
+        background-size: contain;
+    }
+    .img-empathize--three{
+        background-image: url(../img/valor/empathize-03.svg);
+        background-size: contain;
+    }
+
+    .img-empathize--four{
+        background-image: url(../img/valor/empathize-04.svg);
+        background-size: contain;
+    }
+    .img-empathize--five{
+        background-image: url(../img/valor/empathize-05.svg);
+        background-size: contain;
+    }
+    .img-empathize--six{
+        background-image: url(../img/valor/empathize-06.svg);
+        background-size: contain;
+    }
+
+/* Define */
+    .img-define--one{
+        background-image: url(../img/valor/define-01.svg);
+        background-size: contain;
+    }
+    .img-define--two{
+        background-image: url(../img/valor/define-02.svg);
+        background-size: contain;
+    }
+    .img-define--three{
+        background-image: url(../img/valor/define-03.svg);
+        background-size: contain;
+    }
+
+/* IDEATE */
+    .img-ideate--one{
+        background-image: url(../img/valor/ideate-01.svg);
+        background-size: cover;
+    }
+    .img-ideate--two{
+        background-image: url(../img/valor/ideate-02.svg);
+        background-size: contain;
+    }
+    .img-ideate--three{
+        background-image: url(../img/valor/ideate-03.svg);
+        background-size: contain;
+    }
+    .img-ideate--four{
+        background-image: url(../img/valor/ideate-04.svg);
+        background-size: contain;
+    }
+    .img-ideate--five{
+        background-image: url(../img/valor/ideate-05.svg);
+        background-size: contain;
+    }
+    .img-ideate--six{
+        background-image: url(../img/valor/ideate-06.svg);
+        background-size: contain;
+    }
+    .img-ideate--seven{
+        background-image: url(../img/valor/ideate-07.svg);
+        background-size: cover;
+    }
+   
+
+/* MOCKUPS */
+    .img-mockups--one{
+        background-image: url(../img/valor/mockups-01.svg);
+        background-size: contain;
+        background-color: #ffffff;
+    }
+    .img-mockups--two{
+        background-image: url(../img/valor/mockups-02.svg);
+        background-size: contain;
+        background-color: #ffffff;
+    }
+    .img-mockups--three{
+        background-image: url(../img/valor/mockups-03.svg);
+        background-size: cover;
+        background-color: #ffffff;
+    }
+
+/* RESULTS */
+    .img-proto--one{
+        background-image: url(../img/valor/proto-1.png);
+        background-size: contain;
+        background-color: #8DDFE4;
+    }
+    .img-proto--two{
+        background-image: url(../img/valor/proto-2.png);
+        background-size: contain;
+        background-color: #FEE99C;
+    }
+
+
+
+
+/******************** TABLET [768>1023) *********************** */
+@media screen and (max-width: 1024px){
+    
+    .img-cover--one{
+        background-image: url(../img/valor/summary-tablet.png);
+        background-size: cover;
+    }
+   
+}
+
+
+/******************** PHONE [<-820 portrait) *********************** */
+@media screen and (max-width: 820px){
+   /* COVER */
+    .img-cover--one{
+        background-image: url(../img/valor/summary-mobile.png);
+        background-size: cover;
+    }
+}

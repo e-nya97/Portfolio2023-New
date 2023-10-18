@@ -1,0 +1,275 @@
+/******************** DESKTOP [1024->) *********************** */
+
+body{
+    gap: 0px !important;;
+}
+
+.cs--grid{
+    grid-column: 2/12;
+}
+.cs-section{
+    padding: 60px 8.5%;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.font-color--cyan{
+    color: var(--colors-cyan-200); 
+}
+.font-color--yellow{
+    color: var(--colors-yellow-200);
+}
+.font-color--red{
+    color: var(--colors-red-100);
+}
+.cs--title{
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.cs-background--white{
+    background-color: white;
+}
+
+.cs-image-section{
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+.cs--image{
+    grid-column: 1/13;
+    height: 272px;
+    width: 100%;
+}
+
+.cs-video{
+    height: 272px;
+    width: 100%;
+    background-color: var(--colors-light-100);
+}
+
+
+/* HERO */
+.cs-hero{
+    padding: 60px 8.5%;
+
+    display: flex;
+    gap: 32px;
+}
+.cs-hero--title{
+    width: -webkit-fill-available;
+    
+    display: flex;
+    align-items: flex-start;
+    text-align: left;
+    flex-direction: column;
+    gap: 24px;
+}
+.cs-hero--number{
+    font-size: 40px;
+    font-weight: 700;
+}
+.cs-hero--title{
+    font-size: 64px;
+    font-weight: 700;
+}
+
+.cs-hero--intro{
+    width: -webkit-fill-available;
+    
+    display: flex;
+    align-items: flex-end;
+    text-align: right;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+}
+.cs--dots{
+    display: flex;
+    gap: 16px;
+}
+.portfolio-dots{
+    font-variation-settings:
+    'FILL' 1;
+    font-size: 16px !important;
+}
+
+
+/* AT A GLANCE */
+.cs-ataglace{
+    background-color: var(--colors-light-50);
+}
+.cs-ataglace--listsgroup{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.cs-ataglace--lists{
+    width: -webkit-fill-available;
+
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* THE PROCESS */
+.cs-dp--tabgroup{
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+
+.cs-dp--tab{
+    width: -webkit-fill-available;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    gap: 16px;
+    /* height: 250px; */
+}
+.cs-dp--topnumber{
+    font-size: 32px;
+    font-weight: 700;
+    transform: rotate(-90deg);
+}
+
+.tablinks{
+    border: 4px solid var(--colors-yellow-100);
+    background-color: white;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    
+    width:100%;
+    height: 104px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.cs-dp--tabgroup button.active{
+    background-color: var(--colors-yellow-100);
+    height: 160px;
+}
+.cs-dp--tabgroup button:hover{
+    background-color: var(--colors-yellow-50);
+}
+
+.tab-icon{
+    font-size: 36px !important;
+}
+
+.tabcontent {
+    display: none;
+    -webkit-animation: fadeEffect 1s;
+    animation: fadeEffect 1s;
+}
+  
+  /* Fade in tabs */
+  @-webkit-keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+  
+  @keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+
+.dp-section{
+    display: flex;
+    flex-direction: column;
+
+    gap: 32px;
+    padding: 40px 32px;
+    background-color: var(--colors-light-100);
+}
+
+
+/* RESULTS */
+.cs-result{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.result-proto--section{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 24px;
+}
+
+/* WHAT I LEARNED */
+.cs-whatilearned{
+    background-color: var(--colors-light-50) !important;
+}
+
+
+.back-to-top{
+    margin: 24px 0;
+}
+
+/******************** TABLET [768>1023) *********************** */
+@media screen and (max-width: 1024px){
+    .cs--grid{
+        grid-column: 1/9;
+    }
+
+    .cs-section{
+        padding: 60px 32px;
+    }
+
+    .cs-hero{
+        padding: 60px 32px;
+    }
+}
+
+
+/******************** PHONE [<-820 portrait) *********************** */
+@media screen and (max-width: 820px){
+    .cs--grid{
+        padding: 60px 16px;
+    }
+
+    .cs--title {
+        font-size: 32px;
+    }
+    .cs-section{
+        padding: 0px 16px;
+        gap: 32px;
+    }
+
+    .cs-hero{
+        padding: 60px 16px;
+        flex-direction: column;
+    }
+    .cs-hero--title{
+        gap: 16px;
+    }
+    .cs-hero--number{
+        font-size: 32px;
+    }
+    .cs-hero--title{
+        font-size: 56px;
+    }
+
+    .cs-ataglace--listsgroup {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .cs-image-section{
+        flex-direction: column;
+    }
+
+    .cs-dp{
+        display: none;
+    }
+
+}
