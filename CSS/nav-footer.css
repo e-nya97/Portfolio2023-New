@@ -36,6 +36,7 @@
 
         width: 112px;
         color: var(--colors-dark-100);
+        /* position: relative; */
     }
 
     a.nav-item {
@@ -69,12 +70,22 @@
         outline-color: var(--colors-dark-100)!important;
     }
 
-    .nav-item:focus{
+    .nav-item:focus-visible{
         outline: 2px solid;
     }
+    
     .nav-item:hover{
         border-bottom: 2px solid;
     }
+
+    /* .nav-item:hover ::after{
+        border-bottom: 2px solid;
+        content: "";
+        width: 100%;
+        position: absolute;
+        display: block;
+        inset: 0;
+    } */
 
     /* .nav-item:hover .nav-item--icon{
         display: block !important;
