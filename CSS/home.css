@@ -1,8 +1,6 @@
 /******************** Desktop [<-1366->) *********************** */
     .hero{
         height: 75vh;
-        /* width: 100%; */
-
         grid-template-rows: repeat(8, minmax(0, 1fr));
         row-gap: 0 !important;
 
