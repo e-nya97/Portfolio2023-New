@@ -6,7 +6,7 @@
         grid-template-rows: repeat(8, minmax(0, 1fr));
         row-gap: 0 !important;
 
-        background-image: url(../IMG/cover-photo.png);
+        background-image: url(../img/cover-photo.png);
         background-repeat: no-repeat;
         background-position: center; 
         background-size:contain;
