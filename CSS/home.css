@@ -164,7 +164,19 @@
 
     .w-portfolio--image{
         height: 200px;
-        background-color: pink;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .wp-img--one{
+        background-image: url(../mywork/img/bceats/thumbnail.png);
+        background-size: contain;
+        background-color: #FCD756;
+    }
+    .wp-img--four{
+        background-image: url(../mywork/img/valor/thumbnail.png);
+        background-size: cover;
     }
 
     .w-portfolio--summary{
